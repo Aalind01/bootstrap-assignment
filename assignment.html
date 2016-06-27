@@ -1,0 +1,218 @@
+<!--main.html-->
+<!doctype html>
+<html>
+  <head>
+    <title>MisterBuzz</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+   <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>  
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+  
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/js/bootstrap-select.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+  </head>
+  <body ng-app="mainApp">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="position:relative;top:0px;">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#"><div class="vegas-icon"></div></a>
+
+            <button class="navbar-toggler visible-xs visible-sl pull-right" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="margin-top:10px;margin-right: 10px;">
+            &#9776;
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-ex1-collapse navbar-collapse"  id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#/news">NEWS</a></li>
+            <li><a href="#/gallery">GALLERY</a></li>
+            <li><a href="#/ideas">IDEAS</a></li>
+            <li><a href="#/services">SERVICES</a></li>
+            <li><a href="#/faq">FAQ</a></li>
+            <li><a href="#/contacts">CONTACTS</a></li>
+            <li><a href="#/camera"><div class="camera-icon"></div></a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><div class="user-icon"></div></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><div class="glyphicon glyphicon-user"></div>&nbsp;My Profile</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Help Me</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#"><div class="glyphicon glyphicon-off"></div>&nbsp;Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel"  data-interval="2000">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="img/baby2.jpg" alt="Baby">
+        </div>
+
+        <div class="item">
+          <img src="img/tyrion.jpg" alt="Tyrion">
+        </div>
+
+        <div class="item">
+          <img src="img/baby2.jpg" alt="Baby">
+        </div>
+
+        <div class="item">
+          <img src="img/bravos.jpg" alt="Bravos">
+        </div>
+      </div>
+
+    </div>
+    <div class="about-us">
+      <div class="about-title ">About Us</div>
+      <div class="about-desc"><span class="comp-name">Vegas Photo Studio</span> founded in 2012, and at all times to please its customers
+       stunning photographs.</div>
+       <button class="moreabout-us btn">More about us..</button>
+    </div>
+
+    <div class="row row-no-padding coffee-div container-fluid">
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6"><img src="img/aromaImg.jpg" class="aroma-img-class" alt="invigorating aroma"></div> 
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6"><img src="img/coffeeMug.jpg" class="coffee-mug-class" alt="coffee mug"></div> 
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 welcome-div">    
+        <div class="welcome-contents">
+          <div class="welcome-contents-header ">welcome!</div>
+          <div class="welcome-contents-desc1 italic">Do not want a cup of coffee?</div>
+          <div class="welcome-contents-desc2">Having come to us in  photo studio, you can treat yourself a cup of coffee, browse through magazine with studio work.</a></div>
+          <div class="welcome-contents-links">
+            <div class="glyphicon glyphicon-tags"></div>
+            <div class="links-child1"><span>&middot;</span><a href="#" class="italic">Flavored Coffee</a><span>&middot;</span><a href="#" class="italic">Journals studio</a></div>
+            </ul>
+          </div>
+        </div>      
+
+      </div> 
+    </div>
+
+    <div class="row row-no-padding camDiv container-fluid">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 photo-content-div">        
+        <div class="photo-contents">
+          <div class="photo-contents-header ">photo for memory!</div>
+          <div class="photo-contents-desc1 italic"> Absolutely free!</div>
+          <div class="photo-contents-desc2">After checking into our studio, you can get a set of professional photos on memory in vain.<a href="#"> For details on registering..</a></div>
+          <div class="photo-contents-links">
+            <div class="glyphicon glyphicon-tags"></div>
+            <div class="links-child1"><span>&middot;</span><a href="#" class="italic">Photo for money</a></div>
+            </ul>
+          </div>
+        </div>
+      </div> 
+      
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"><img src="img/cameraMan.jpg" class="camera-man-class" alt="cameraman"></div> 
+    </div>
+
+    <div class="row row-no-padding camDiv container-fluid">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><img src="img/ourStudio.jpg" class="our-studio-class" alt="Our studio"></div>
+    </div>
+
+    <div class="row row-no-padding coffee-div container-fluid">
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 online-div">
+      <div class="online-contents">
+        <div class="online-header">online</div>
+        <div class="online-desc1"> We are in social networks</div>
+        <div class="online-desc2">It is in social networks easier to follow the news studio. Join Us!</div>
+        <div class="online-links">
+          <div class="glyphicon glyphicon-tags"></div>
+          <div class="links-child1"><span>&middot;</span><a href="#">VKontake</a><span>&middot;</span><a href="#">Facebook</a></div>
+          <div class="links-child2"><span>&middot;</span><a href="#">Twitter</a><span>&middot;</span><a href="#">YouTube</a></div>
+          </ul>
+        </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"><img src="img/people.jpg" class="people-class" alt="People"></div>  
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 social-div">
+        <div class="social-heading">Social</div>
+        <button class="social-btns btn">vk.com/vegas</button>
+        <button class="social-btns btn">twitter.com/vegas</button>
+        <button class="social-btns btn">facebook.com/vegas</button>
+        <button class="social-btns btn">youtube.com/vegas</button>
+      </div> 
+    </div>
+
+    <div class="row row-no-padding camDiv container-fluid">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><img src="img/landscape.jpg" class="landscape-class" alt="Landscape"></div>
+    </div>
+
+    <div class="become-our-cust">
+      <div class="become-title">Become our customer</div>
+      <div class="become-desc">Once you become our client, you have to open all the colors of our studio! Trips abroad,  amazing
+      gifts and much more! Be with us!</div>
+       <button class="sign-up btn">Sign up..</button>
+    </div>
+
+    <div class="row">
+      <div id="map-container" class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+    </div>
+
+   <footer id="footer">
+            <div class="row-fluid footer-heading">Vegas Photo Studio</div>
+            <div class="row row-contacts">
+                <div class="col-lg-2 col-md-2"></div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <div class="footer-childgroup-header">Come visit us</div>
+                    <p class="footer-links"> 
+                        <a href="#" rel="nofollow" title="The Russian Federation" target="ext">The Russian Federation</a><br>
+                        <a href="#" rel="nofollow" title="Leningrad Region" target="ext">Leningrad Region</a><br>
+                        <a href="#" rel="nofollow" title="Slansy City" target="ext">Slansy City</a><br>
+                        <a href="#" rel="nofollow" title="Lenin Street 5" target="ext">Lenin Street 5</a><br>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <div class="footer-childgroup-header">Contact Us</div>
+                    <p class="footer-links"> 
+                        <a href="tel:+8137422516">8(813)742-25-16</a><br>
+                        <a href="fax:+8137422510">8(813)742-25-10</a><br>
+                        <a href="mailto:studio@vegas.ru">Email: studio@vegas.ru</a><br>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <div class="footer-childgroup-header">Follow us on</div>
+                    <p class="footer-links"> 
+                        <a href="http://www.vk.com/vegas" rel="nofollow" title="vk vegas" target="ext">vk.com/vegas</a><br>
+                        <a href="https://www.facebook.com/vegas" rel="nofollow">facebook.com/vegas</a><br>
+                        <a href="https://www.twitter.com/vegas" rel="nofollow" title="twitter" target="ext">twitter.com/vegas</a><br>
+                        <a href="https://www.youtube.com/vegas" title="youtube" target="ext">youtube.com/vegas</a><br>
+                    </p>
+                </div>
+                <div class="col-lg-1 col-md-1"></div>
+            </div>
+    </footer>
+
+    <footer class="footer copyright-footer">
+      <div class="container">
+        <p class="text-muted">Copyright &copy; 2014 Vegas Photo Studio. All rights reserved.</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
